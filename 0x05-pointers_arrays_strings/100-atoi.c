@@ -1,4 +1,3 @@
-include "main.h"
 /**
  * _atoi -> convert string to integer
  * @s:strint parameter
