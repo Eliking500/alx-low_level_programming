@@ -1,22 +1,21 @@
 #include "main.h"
 /**
- * _atoi -> convert string to integer
- * @s: strint parameterr
- * Return: integer of the string
+ * _strcpy -> a string
+ *
+ * @src: source a string parameter input
+ * @dest: destination of string
+ * Return: pointer to dest input
  */
-int _atoi(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	unsigned int num = 0;
-	int sign = 1;
+	int e, k = 0;
 
-	do {
-		if (*s == '_')
-			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = (num * 10) + (*s - '0');
-		else if (num > 0)
-			break;
-	} while (*s++);
+	for (e = 0; src[e] != '\0'; ++e)
+	{
+		dest[k] = src[e];
+		++k;
+	}
+	dest[k] = '\0';
 
-	return (num * sign);
+	return (dest);
 }
