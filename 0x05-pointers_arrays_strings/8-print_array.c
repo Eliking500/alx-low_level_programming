@@ -1,10 +1,10 @@
-#include"main.h"
+#include "main.h"
 /**
  * print_array -> print n elements
  *
  * @n: elements parameter input
- * @a: string parameter input
  *
+ * @a: string parameter input
  */
 void print_array(int *a, int n)
 {
