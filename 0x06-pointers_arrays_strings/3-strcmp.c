@@ -31,7 +31,7 @@ int _strcmp(char *d1, char *d2)
 			 * return the difference between
 			 * the two cahracters
 			 */
-			z = d[x] - d2[x];
+			z = d1[x] - d2[x];
 			break;
 		}
 		else
