@@ -17,12 +17,12 @@ int last_index(char *s)
 }
 
 /**
- * is_palindrome - check if a string is a palidrome
+ * is_palindrome - check if a string is a palindrome
  * @s: string to check
  * Return: 0 or 1
  */
 
-int is_palidrome(char *s)
+int is_palindrome(char *s)
 {
 	int end = last_index(s);
 
@@ -30,10 +30,10 @@ int is_palidrome(char *s)
 }
 
 /**
- * check - checker for the palidrome
+ * check - checker for the palindrome
  * @s: string
  * @start: int moves from right to left
- * @end: int moves fro left to right
+ * @end: int moves from left to right
  * @pair: int
  * Return: 0 or 1
  */
