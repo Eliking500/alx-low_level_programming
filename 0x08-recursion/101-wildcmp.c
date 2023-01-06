@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h.>
+#include <stdio.h>
 
 /**
  * wildcmp - heck the code for Holberton School students.
