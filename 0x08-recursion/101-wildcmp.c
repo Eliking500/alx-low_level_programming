@@ -34,13 +34,16 @@ int checkLast(char *s, int i)
  * @s2: string
  * @a: int
  * @b: int
- * @widUsed: int
+ * @wildUsed: int
  * Return: Always 0.
  */
 int checker(char *s1, char *s2, int a, int b, int wildUsed)
 {
 
-	if (s1[b] == '\0')
+	if (s1[a] != '\0')
+	{
+
+	if (s2[b] == '\0')
 		return (0);
 	else if (s2[b] == '*')
 	{
@@ -53,7 +56,7 @@ int checker(char *s1, char *s2, int a, int b, int wildUsed)
 		else if (s1[a + 1] == s2[b + 1])
 			return (checker(s1, s2, a + 1, b + 1, b));
 	}
-	else if ((s1[a] == s2[b] || (s2[b] == '*' && s2[b + 1] == s1[a + 2]))
+	else if ((s1[a] == s2[b] || (s2[b] == '*' && s2[b + 1] == s1[a + 1]))
 			return (checker(s1, s2, a + 1, b + 1, wildUsed));
 
 			if (wildUsed == -1)
@@ -65,4 +68,6 @@ int checker(char *s1, char *s2, int a, int b, int wildUsed)
 			return (checkLast(s2, b));
 
 			return (1);
+
+
 			}
