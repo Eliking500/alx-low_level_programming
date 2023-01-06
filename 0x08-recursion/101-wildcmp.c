@@ -10,11 +10,11 @@
 
 int wildcmp(char *s1, char *s2)
 {
-	return (chaecker(s1, s2, 0, 0, -1));
+	return (checker(s1, s2, 0, 0, -1));
 }
 
 /**
- * checklist - check last char of s2 when s1 ends
+ * checkLast - check last char of s2 when s1 ends
  * @s: string
  * @i: int
  * Return: 0 or 1
